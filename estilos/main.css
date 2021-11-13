@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Cascadia Code', Helvetica, sans-serif;
+}
+
+body {
+    
+    background-color:#0489EC;
+}
+
+header{
+    padding: 10px;
+    background-color: #0c0c0c;
+}
+
+.menu{
+    text-align: center;
+}
+
+
+.portfolio{
+    display: inline;
+}
+
+.portfolio a{
+    font-size: large;
+    text-decoration: none;
+}
+
+.logo{
+    
+    display: inline;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px;
+}
+.logo img{
+    width: 100px;
+}
+
+.link{
+    display: inline;
+}
+
+.link a{
+    font-size: large;
+    text-decoration: none;
+}
+
+.tecnologias, .presentacion{
+    margin-top: 200px;
+    float: left;
+}
+
+.presentacion{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 150px;  
+}
+
+.presentacion h1 {
+    display: block;
+    clear: both;
+    text-align: left;
+    color: black;
+    font-size:xx-large;
+}
+
+.tecnologias{
+    margin-left: 100px;
+    margin-bottom: 70px;
+    border-style: solid;
+    border-color: white;
+    padding: 20px;
+}
+
+.tecnologias h2{
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.tecnologias img{
+    width: 35px;
+    height: 35px;
+}
+
+.proyectos{
+    clear: both;
+    width: 95%;
+    margin-left: 5px;
+    border-style: solid;
+    border-color: white;
+    padding: 20px;   
+}
+
+.proyectos h2{
+    margin-bottom: 40px;
+    font-size: xx-large;
+}
+
+.proyectos h3{
+    margin-bottom: 20px;
+    font-size:x-large;
+}
+
+.unProyecto{
+    clear: both;
+    margin-bottom: 150px;
+}
+
+.screenshot{
+    float: left;
+    margin-right: 50px;
+}
+
+.screenshot img{
+    width: 500px;
+    border: solid;
+    border-color: #ff8300;
+}
+
+.descripcion{
+    font-size: larger;
+    line-height: 30px;
+}
+
+.titulo h3, .descripcion p span{
+    color: black;
+}
+
+span {
+    color: white;
+}
+
+aside{
+    background-color: white;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+aside h2{
+    color: #ff8300;
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+aside h3{
+    color: black;
+    font-size: larger;
+    margin-left: 20px;
+    float: left;
+}
+
+aside p{
+    color: black;
+    font-size: larger;
+}
+
+aside img{
+    width: 35px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.contacto{
+    border: solid;
+    border-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 40%;
+}
+
+.datos, .social{
+    margin-top: 20px;
+}
+
+.social{
+    margin-left: 10px;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+footer h2{
+    text-align: center;
+    font-size: small;
+}
