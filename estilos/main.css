@@ -1,26 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: white;
     font-family: 'Cascadia Code', Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
-    
+    width: 100%;
     background-color:#0489EC;
 }
 
 header{
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #0c0c0c;
 }
 
 .menu{
     text-align: center;
 }
-
 
 .portfolio{
     display: inline;
@@ -80,20 +81,21 @@ header{
 }
 
 .tecnologias h2{
+    font-size:xx-large;
     margin-bottom: 20px;
     color: white;
     text-align: center;
 }
 
 .tecnologias img{
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
 }
 
 .proyectos{
     clear: both;
     width: 95%;
-    margin-left: 5px;
+    margin-left: 2.5%;
     margin-bottom: 75px;
     border-style: solid;
     border-color: white;
@@ -141,6 +143,7 @@ span {
 }
 
 aside{
+    width: 100%;
     background-color: white;
     margin-top: 10px;
     margin-bottom: 75px;
@@ -213,6 +216,15 @@ footer h2{
     .contacto{
         width: 40%;
     }
+
+    .tecnologias h2{
+        font-size: x-large;
+    }
+    
+    .tecnologias img{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media screen and (max-width: 1024px){
@@ -247,6 +259,8 @@ footer h2{
 }
 
 @media screen and (max-width: 768px){
+   
+
     .logo{
         margin-left: 100px;
         margin-right: 100px;
@@ -316,7 +330,9 @@ footer h2{
     }
 
     .tecnologias{
-        margin-left: 7%;
+        width: 95%;
+        margin-left: 2.5%;
+        text-align: center;
     }
 
     .tecnologias h2{
@@ -324,8 +340,8 @@ footer h2{
     }
 
     .tecnologias img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     .proyectos{
