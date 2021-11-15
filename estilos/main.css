@@ -385,11 +385,13 @@ footer h2{
 
     .contacto h3, .contacto p{
         font-size: medium;
-        text-align: center;
         margin-left: 0px;
+        text-align: center;
+        
     }
 
     .social {
-    margin-left: 25%;
+        margin-left: 0px;
+        text-align: center;
     }
 }
