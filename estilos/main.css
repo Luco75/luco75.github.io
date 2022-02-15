@@ -30,6 +30,11 @@ header{
 .portfolio a, .link a{
     font-size: large;
     text-decoration: none;
+    transition: all 0.2s;
+}
+
+.portfolio a:hover, .link a:hover{
+    color: #ff8300;
 }
 
 .logo{
