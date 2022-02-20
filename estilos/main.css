@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family: 'Cascadia Code', Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
     background-color:#0489EC;
+    position: relative;
+    font-size: 16px;
 }
 
 header{
@@ -19,29 +21,44 @@ header{
     background-color: #000;
 }
 
-.menu{
+nav{
+    background-color: #000;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li{
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    font-size: 1.2em;
+    transition: all .2s;
 }
 
 .portfolio, .link{
-    display: inline;
+    
+    position: absolute;
+    top: 20%;
+}
+
+.portfolio{
+    left: 30%;
+}
+
+.link{
+    right: 30%;
 }
 
 .portfolio a, .link a{
-    font-size: large;
+    font-size: 1.2em;
     text-decoration: none;
     transition: all 0.2s;
 }
 
 .portfolio a:hover, .link a:hover{
     color: #ff8300;
-}
-
-.logo{
-    display: inline;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 200px;
 }
 
 .logo img{
@@ -64,7 +81,7 @@ header{
     clear: both;
     text-align: left;
     color: black;
-    font-size:xx-large;
+    font-size: 3.5em;
 }
 
 .tecnologias{
@@ -72,12 +89,13 @@ header{
     margin-bottom: 70px;
     border-style: solid;
     border-color: #fff;
+    border-radius: 10px;
     padding: 20px;
     background-color: #003c68;
 }
 
 .tecnologias h2{
-    font-size:xx-large;
+    font-size: 2.2em;
     margin-bottom: 20px;
     color: #fff;
     text-align: center;
@@ -95,23 +113,25 @@ header{
     margin-bottom: 75px;
     border-style: solid;
     border-color: #fff;
+    border-radius: 10px;
     padding: 20px;
     background-color: #003c68;   
 }
 
 .proyectos h2{
     margin-bottom: 40px;
-    font-size: xx-large;
+    font-size: 2.2em;
 }
 
 .proyectos h3{
     margin-bottom: 20px;
-    font-size:x-large;
+    font-size: 1.7em;
 }
 
 .unProyecto{
     clear: both;
     margin-bottom: 150px;
+    font-size: 1.2em;
 }
 
 .screenshot{
@@ -122,15 +142,15 @@ header{
 .screenshot img{
     width: 500px;
     border: solid;
-    border-color: #ff8300;
+    border-color: #FF8300;
+    border-radius: 10px;
 }
 
 .descripcion{
-    font-size: larger;
     line-height: 30px;
 }
 
-.titulo h3, .descripcion p span{
+.titulo h3, .descripcion p b{
     color: #FF8300;
 }
 
@@ -158,20 +178,18 @@ aside{
 
 aside h2{
     color: #ff8300;
-    font-size: xx-large;
+    font-size: 2.2em;
     margin-left: 20px;
-}
-
-aside h3{
-    color: #000;
-    font-size: larger;
-    margin-left: 20px;
-    float: left;
 }
 
 aside p{
     color: #000;
-    font-size: larger;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+aside p b{
+    color: #000;
 }
 
 aside img{
@@ -184,6 +202,7 @@ aside img{
 .contacto{
     border: solid;
     border-color: #000;
+    border-radius: 10px;
     margin-left: 20px;
     margin-top: 20px;
     width: 30%;
@@ -198,7 +217,7 @@ aside img{
 }
 
 .social a i{
-    color: #000;
+    color: #0489EC;
     font-size: 3em;
     margin: 0px 0px 10px 10px;
     transition: all 0.2s;
@@ -221,6 +240,18 @@ footer h2{
 
 @media screen and (max-width: 1366px){
 
+    body{
+        font-size: 12px;
+    }
+
+    .portfolio{
+        left: 25%;
+    }
+    
+    .link{
+        right: 25%;
+    }
+
     .presentacion{
         padding-left: 60px;
     }
@@ -232,10 +263,6 @@ footer h2{
     .contacto{
         width: 40%;
     }
-
-    .tecnologias h2{
-        font-size: x-large;
-    }
     
     .tecnologias img{
         width: 35px;
@@ -246,12 +273,16 @@ footer h2{
 @media screen and (max-width: 1024px){
 
     .presentacion{
-        width: 50%;
-        padding-left: 75px;
+        width: 60%;
+        padding-left: 50px;
     }
 
-    .presentacion h1{
-        font-size: x-large;
+    .portfolio{
+        left: 20%;
+    }
+    
+    .link{
+        right: 20%;
     }
 
     .tecnologias{
@@ -264,10 +295,6 @@ footer h2{
 
     .unProyecto{
         margin-bottom: 75px;
-    }
-
-    .proyectos p{
-        font-size: medium;
     }
 
     .contacto{
@@ -285,6 +312,18 @@ footer h2{
     
     .logo img{
         width: 75px;
+    }
+
+    .portfolio, .link{
+        width: 150px;
+    }
+
+    .portfolio{
+        left: 15%;
+    }
+    
+    .link{
+        right: 15%;
     }
 
     .tecnologias, .presentacion{
@@ -333,14 +372,27 @@ footer h2{
 
 @media screen and (max-width: 450px){
 
+    body{
+        font-size: 10px;
+    }
+
+    .portfolio, .link{
+        width: 100px;
+    }
+
+    .portfolio{
+        left: 10%;
+        margin-left: 2px;
+    }
+    
+    .link{
+        right: 10%;
+        margin-right: 2px;
+    }
 
     header{
         margin: 0;
         text-align: right;
-    }
-
-    .portfolio a, .link a{
-        font-size: small;
     }
 
     .logo{
@@ -353,7 +405,6 @@ footer h2{
     }
 
     .presentacion h1{
-        font-size: medium;
         padding-left: 5px;
         padding-right: 5px;
     }
@@ -364,10 +415,6 @@ footer h2{
         text-align: center;
     }
 
-    .tecnologias h2{
-       font-size: medium;
-    }
-
     .tecnologias img{
         width: 25px;
         height: 25px;
@@ -376,10 +423,6 @@ footer h2{
     .proyectos{
         padding-left: 3px;
         padding-top: 10px;
-    }
-
-    .proyectos h2, .proyectos h3{
-        font-size: large;
     }
 
     .proyectos p{
@@ -398,7 +441,6 @@ footer h2{
 
     aside h2{
         text-align: center;
-        font-size: x-large;
         margin-left: 0px;
     }
 
@@ -418,7 +460,6 @@ footer h2{
     }
 
     .contacto h3, .contacto p{
-        font-size: medium;
         margin-left: 0px;
         text-align: center;
         
@@ -427,10 +468,6 @@ footer h2{
     .social {
         margin-left: 0px;
         text-align: center;
-    }
-
-    footer h2{
-        font-size: x-small;
     }
 }
 
@@ -442,9 +479,5 @@ footer h2{
 
     .screenshot img{
         width: 250px;
-    }
-
-    .proyectos p{
-        font-size: x-small;
     }
 }
